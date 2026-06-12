@@ -1,0 +1,45 @@
+/* ── Reset e base ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #F7F8FC;
+  color: #2C2C2C;
+}
+
+/* ── Scrollbar discreta ────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #999; }
+
+/* ── Cards ─────────────────────────────────────────────────────── */
+.card {
+  transition: box-shadow .2s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,.10) !important;
+}
+
+/* ── Sliders Dash ───────────────────────────────────────────────── */
+.rc-slider-track  { background-color: #002776; }
+.rc-slider-handle {
+  border-color: #002776;
+  background-color: #002776;
+}
+.rc-slider-handle:hover,
+.rc-slider-handle:active {
+  border-color: #009C3B;
+  box-shadow: 0 0 0 4px rgba(0,156,59,.2);
+}
+
+/* ── Radio / Checklist labels ───────────────────────────────────── */
+.form-check-label { cursor: pointer; }
+
+/* ── Navbar links hover ─────────────────────────────────────────── */
+.nav-link:hover { color: white !important; }
+
+/* ── Responsividade básica ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .card-body { padding: .75rem; }
+}
